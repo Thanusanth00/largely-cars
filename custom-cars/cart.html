@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="./cart.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/cart.css" />
+    <title>Cart | Custom Cars</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo"></div>
+      <nav>
+        <ul>
+          <li><a href="index.html"><span>Home</span><span></span></a></li>
+          <li><a href="products.html"><span>Products</span><span></span></a></li>
+          <li><a href="contact.html"><span>Contact</span><span></span></a></li>
+          <li><a href="about.html"><span>About</span><span></span></a></li>
+          <li><a href="cart.html"><span>Cart</span><span></span></a></li>
+          <li><a href="login.html"><span>Login</span><span></span></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="cart-page">
+      <section class="cart-list-section">
+        <div class="section-title">
+          <h1>Your Shopping Cart</h1>
+          <p>Review your selected cars, change quantity, and continue to secure payment.</p>
+        </div>
+
+        <p class="empty-state">Your cart is empty. Go to the products page and add your favorite cars.</p>
+        <div class="cart-items"></div>
+      </section>
+
+      <aside class="checkout-column">
+        <section class="cart-summary">
+          <h2>Order Summary</h2>
+          <div class="summary-row">
+            <span>Items</span>
+            <span class="item-count">0 items</span>
+          </div>
+          <div class="summary-row">
+            <span>Delivery</span>
+            <span class="delivery-fee">$500</span>
+          </div>
+          <div class="summary-row total-row">
+            <span>Total</span>
+            <span class="total-price">$0</span>
+          </div>
+          <a href="products.html" class="shop-link">Continue Shopping</a>
+          <button class="clear-cart">Clear Cart</button>
+        </section>
+
+        <section class="payment-box">
+          <h2>Card Payment</h2>
+          <p>Enter your payment details to complete your order.</p>
+          <form class="payment-form">
+            <label>
+              Full Name
+              <input type="text" placeholder="Enter card holder name" required />
+            </label>
+            <label>
+              Card Number
+              <input type="text" inputmode="numeric" maxlength="19" placeholder="1234 5678 9012 3456" required />
+            </label>
+            <div class="payment-grid">
+              <label>
+                Expiry Date
+                <input type="text" maxlength="5" placeholder="MM/YY" required />
+              </label>
+              <label>
+                CVV
+                <input type="password" maxlength="4" placeholder="123" required />
+              </label>
+            </div>
+            <label>
+              Billing Address
+              <input type="text" placeholder="Enter billing address" required />
+            </label>
+            <button type="submit" class="pay-btn">Pay Now</button>
+            <p class="payment-message"></p>
+          </form>
+        </section>
+      </aside>
+    </main>
+  </body>
+</html>

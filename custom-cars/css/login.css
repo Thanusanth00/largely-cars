@@ -1,0 +1,68 @@
+.login-area {
+  background-image: url("../assets/images/cover_d.webp");
+  width: 100vw;
+  height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  position: relative;
+}
+.login-form {
+  display: flex;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  width: 300px;
+  gap: 20px;
+  border-radius: 10px;
+  margin-left: 100px;
+  padding-top: 60px;
+  position: relative;
+  z-index: 100;
+}
+.login-form input {
+  padding: 10px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+#login-btn {
+  width: 100%;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #acd25c;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+#login-btn:hover {
+  background-color: #add25cd8;
+}
+form a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.8rem;
+}
+.login-area h1 {
+  font-size: 4rem;
+  color: white;
+  position: relative;
+  z-index: 100;
+}
+.login-bg {
+  width: 100vw;
+  height: calc(100vh - 80px);
+  position: absolute;
+  background-color: #00000093;
+  z-index: 90;
+}

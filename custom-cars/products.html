@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/products.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="products.js" defer></script>
+    <title>Products | Custom Cars</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo"></div>
+      <nav>
+        <ul>
+          <li><a href="index.html"><span>Home</span><span></span></a></li>
+          <li><a href="products.html"><span>Products</span><span></span></a></li>
+          <li><a href="contact.html"><span>Contact</span><span></span></a></li>
+          <li><a href="about.html"><span>About</span><span></span></a></li>
+          <li><a href="cart.html"><span>Cart</span><span></span></a></li>
+          <li><a href="login.html"><span>Login</span><span></span></a></li>
+        </ul>
+      </nav>
+    </header>
+     
+    <section class="products-hero">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <p class="mini-title">Premium Collection</p>
+        <h1>Choose Your Dream Car</h1>
+        <p class="hero-text">
+          Explore our luxury and sports car collection. Every car card includes
+          image, price, short details, and add to cart button.
+        </p>
+        <div class="hero-stats">
+          <div class="stat-box">
+            <span class="stat-value" id="totalCars">0</span>
+            <span class="stat-label">Cars Available</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-value">24/7</span>
+            <span class="stat-label">Customer Support</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-value">100%</span>
+            <span class="stat-label">Premium Quality</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-toolbar">
+      <div>
+        <h2>Featured Cars</h2>
+        <p class="product-count"></p>
+      </div>
+      <a class="go-cart-btn" href="cart.html">View Cart</a>
+    </section>
+
+    <section class="products"></section>
+  </body>
+</html>
